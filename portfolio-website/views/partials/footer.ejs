@@ -1,0 +1,52 @@
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Joaquín Aguilar</h3>
+                <p><%= language === 'en' ? 'Software Engineer' : 'Ingeniero de Software' %></p>
+                <p><%= language === 'en' ? 'Based in' : 'Ubicado en' %> Chiapas, México</p>
+            </div>
+            <div class="footer-links">
+                <h4><%= language === 'en' ? 'Quick Links' : 'Enlaces Rápidos' %></h4>
+                <a href="/">
+                    <%= language === 'en' ? 'Home' : 'Inicio' %>
+                </a>
+                <a href="/projects">
+                    <%= language === 'en' ? 'Projects' : 'Proyectos' %>
+                </a>
+                <a href="/about">
+                    <%= language === 'en' ? 'About' : 'Acerca de' %>
+                </a>
+                <a href="/contact">
+                    <%= language === 'en' ? 'Contact' : 'Contacto' %>
+                </a>
+            </div>
+            <div class="footer-social">
+                <h4><%= language === 'en' ? 'Connect' : 'Conecta' %></h4>
+                <div class="social-icons">
+                    <a href="https://github.com/JoaquiinAguilar" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joaquin-aguilar-ab3515216" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:joaquinaguilar492@outlook.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <%= new Date().getFullYear() %> Joaquín Aguilar. 
+               <%= language === 'en' ? 'All rights reserved.' : 'Todos los derechos reservados.' %></p>
+            <p><%= language === 'en' ? 'Built with' : 'Construido con' %> 
+               Node.js, Express, <%= language === 'en' ? 'and' : 'y' %> EJS</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="/js/particles-config.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

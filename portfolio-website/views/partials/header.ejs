@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="<%= language %>" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <% if(language === 'en') { %>
+            Joaquín Aguilar | Software Engineer
+        <% } else { %>
+            Joaquín Aguilar | Ingeniero de Software
+        <% } %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/theme.js" defer></script>
+    <script src="/js/animation.js" defer></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="/">JA</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/" class="<%= page === 'home' ? 'active' : '' %>">
+                        <%= language === 'en' ? 'Home' : 'Inicio' %>
+                    </a>
+                    <a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>">
+                        <%= language === 'en' ? 'Projects' : 'Proyectos' %>
+                    </a>
+                    <a href="/about" class="<%= page === 'about' ? 'active' : '' %>">
+                        <%= language === 'en' ? 'About' : 'Acerca de' %>
+                    </a>
+                    <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">
+                        <%= language === 'en' ? 'Contact' : 'Contacto' %>
+                    </a>
+                </div>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <div class="language-selector">
+                        <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">EN</a>
+                        <span>|</span>
+                        <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">ES</a>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <a href="/" class="<%= page === 'home' ? 'active' : '' %>">
+            <%= language === 'en' ? 'Home' : 'Inicio' %>
+        </a>
+        <a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>">
+            <%= language === 'en' ? 'Projects' : 'Proyectos' %>
+        </a>
+        <a href="/about" class="<%= page === 'about' ? 'active' : '' %>">
+            <%= language === 'en' ? 'About' : 'Acerca de' %>
+        </a>
+        <a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">
+            <%= language === 'en' ? 'Contact' : 'Contacto' %>
+        </a>
+        <div class="mobile-controls">
+            <button id="mobile-theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="language-selector">
+                <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">EN</a>
+                <span>|</span>
+                <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">ES</a>
+            </div>
+        </div>
+    </div>
+    <main>

@@ -1,0 +1,183 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+    <div class="container">
+        <h1><%= language === 'en' ? 'Get In Touch' : 'Contacto' %></h1>
+        <p>
+            <% if(language === 'en') { %>
+                Have a project in mind or want to collaborate? Feel free to reach out!
+            <% } else { %>
+                ¿Tienes un proyecto en mente o quieres colaborar? ¡No dudes en contactarme!
+            <% } %>
+        </p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2><%= language === 'en' ? 'Contact Information' : 'Información de Contacto' %></h2>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3><%= language === 'en' ? 'Email' : 'Correo Electrónico' %></h3>
+                        <p><a href="mailto:joaquinaguilar492@outlook.com">joaquinaguilar492@outlook.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/JoaquiinAguilar" target="_blank">github.com/JoaquiinAguilar</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/joaquin-aguilar-ab3515216" target="_blank">linkedin.com/in/joaquin-aguilar-ab3515216</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3><%= language === 'en' ? 'Location' : 'Ubicación' %></h3>
+                        <p>Chiapas, México</p>
+                    </div>
+                </div>
+                <div class="availability">
+                    <h3><%= language === 'en' ? 'Availability' : 'Disponibilidad' %></h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            I'm open to remote opportunities and collaborations worldwide.
+                        <% } else { %>
+                            Estoy abierto a oportunidades remotas y colaboraciones en todo el mundo.
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? 'Frequently Asked Questions' : 'Preguntas Frecuentes' %>
+        </h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>
+                        <% if(language === 'en') { %>
+                            What services do you offer?
+                        <% } else { %>
+                            ¿Qué servicios ofreces?
+                        <% } %>
+                    </h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        <% if(language === 'en') { %>
+                            I offer backend development, system architecture design, API development, and database design services. I specialize in building scalable applications using Django, Python, and related technologies.
+                        <% } else { %>
+                            Ofrezco servicios de desarrollo backend, diseño de arquitectura de sistemas, desarrollo de API y diseño de bases de datos. Me especializo en construir aplicaciones escalables utilizando Django, Python y tecnologías relacionadas.
+                        <% } %>
+                    </p>
+                </div>
+                <br>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>
+                        <% if(language === 'en') { %>
+                            Are you available for freelance work?
+                        <% } else { %>
+                            ¿Estás disponible para trabajo freelance?
+                        <% } %>
+                    </h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        <% if(language === 'en') { %>
+                            Yes, I'm available for freelance projects and consultations. Feel free to reach out with project details, and we can discuss how I can help you bring your ideas to life.
+                        <% } else { %>
+                            Sí, estoy disponible para proyectos freelance y consultas. No dudes en contactarme con los detalles del proyecto, y podemos discutir cómo puedo ayudarte a dar vida a tus ideas.
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>
+                        <% if(language === 'en') { %>
+                            How quickly do you respond to inquiries?
+                        <% } else { %>
+                            ¿Con qué rapidez respondes a las consultas?
+                        <% } %>
+                    </h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        <% if(language === 'en') { %>
+                            I typically respond to inquiries within 24 hours. For urgent matters, please indicate so in your message subject.
+                        <% } else { %>
+                            Normalmente respondo a las consultas dentro de 24 horas. Para asuntos urgentes, por favor indícalo en el asunto de tu mensaje.
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>
+                        <% if(language === 'en') { %>
+                            Do you work remotely?
+                        <% } else { %>
+                            ¿Trabajas de forma remota?
+                        <% } %>
+                    </h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        <% if(language === 'en') { %>
+                            Yes, I primarily work remotely and have experience collaborating with teams across different time zones. I'm comfortable with various communication and project management tools.
+                        <% } else { %>
+                            Sí, trabajo principalmente de forma remota y tengo experiencia colaborando con equipos en diferentes zonas horarias. Me siento cómodo con varias herramientas de comunicación y gestión de proyectos.
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/faq.js"></script>
+
+<%- include('partials/footer') %>

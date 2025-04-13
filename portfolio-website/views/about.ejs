@@ -1,0 +1,327 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+    <div class="container">
+        <h1><%= language === 'en' ? 'About Me' : 'Sobre Mí' %></h1>
+        <p>
+            <% if(language === 'en') { %>
+                Software Engineer passionate about building robust and scalable systems
+            <% } else { %>
+                Ingeniero de Software apasionado por construir sistemas robustos y escalables
+            <% } %>
+        </p>
+    </div>
+</section>
+
+<section class="about-me">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2><%= language === 'en' ? 'Who I Am' : 'Quién Soy' %></h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        I'm Joaquín Aguilar, a Software Engineer from Chiapas, Mexico. With a strong foundation in backend development, I specialize in building scalable applications with a focus on clean architecture and best practices.
+                    <% } else { %>
+                        Soy Joaquín Aguilar, un Ingeniero de Software de Chiapas, México. Con una sólida base en desarrollo backend, me especializo en construir aplicaciones escalables con un enfoque en arquitectura limpia y mejores prácticas.
+                    <% } %>
+                </p>
+                <p>
+                    <% if(language === 'en') { %>
+                        My journey in software development began with a passion for solving complex problems and creating efficient solutions. I graduated as a Systems Engineer, where I gained a strong foundation in computer science principles and software development methodologies.
+                    <% } else { %>
+                        Mi camino en el desarrollo de software comenzó con una pasión por resolver problemas complejos y crear soluciones eficientes. Me gradué como Ingeniero en Sistemas, donde obtuve una sólida base en principios de informática y metodologías de desarrollo de software.
+                    <% } %>
+                </p>
+                <br><br>
+                <h2><%= language === 'en' ? 'My Approach' : 'Mi Enfoque' %></h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        I believe in writing clean, maintainable code that follows industry best practices. My approach to software development is centered around building scalable architectures that can grow with evolving requirements while maintaining performance and reliability.
+                    <% } else { %>
+                        Creo en escribir código limpio y mantenible que siga las mejores prácticas de la industria. Mi enfoque hacia el desarrollo de software se centra en construir arquitecturas escalables que puedan crecer con requisitos en evolución mientras mantienen el rendimiento y la fiabilidad.
+                    <% } %>
+                </p>
+                <br><br>
+            </div>
+            <div class="skills-section">
+                <h2><%= language === 'en' ? 'Skills & Technologies' : 'Habilidades y Tecnologías' %></h2>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h3><%= language === 'en' ? 'Languages' : 'Lenguajes' %></h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">Python</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">C</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3><%= language === 'en' ? 'Frameworks & Tools' : 'Frameworks y Herramientas' %></h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">Django</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Node.js</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Git</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Flutter</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="what-im-doing">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? "What I'm Doing" : "Lo Que Estoy Haciendo" %>
+        </h2>
+        <div class="doing-cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+                <h3>API REST Fingerprint System</h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        A RESTful API system with fingerprint authentication using a biometric sensor, developed during a hackathon.
+                    <% } else { %>
+                        Un sistema API REST con autenticación de huellas digitales utilizando un sensor biométrico, desarrollado durante un hackathon.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-hospital-user"></i>
+                </div>
+                <h3><%= language === 'en' ? 'Patient Registration System' : 'Sistema de Registro de Pacientes' %></h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Developing a comprehensive patient registration system with electronic health records and appointment scheduling.
+                    <% } else { %>
+                        Desarrollando un sistema integral de registro de pacientes con expedientes clínicos electrónicos y programación de citas.
+                    <% } %>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="goals">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? "Goals" : "Objetivos" %>
+        </h2>
+        <div class="goals-cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3><%= language === 'en' ? 'Collaboration' : 'Colaboración' %></h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Looking to collaborate on backend projects and scalable systems with other passionate developers.
+                    <% } else { %>
+                        Buscando colaborar en proyectos backend y sistemas escalables con otros desarrolladores apasionados.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3><%= language === 'en' ? 'Mentorship' : 'Mentoría' %></h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Seeking mentorship in cloud infrastructure and DevOps best practices to enhance my skills.
+                    <% } else { %>
+                        Buscando mentoría en infraestructura en la nube y mejores prácticas de DevOps para mejorar mis habilidades.
+                    <% } %>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="certifications">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? "Certifications" : "Certificaciones" %>
+        </h2>
+        <div class="certifications-grid">
+            <div class="certification-item">
+                <div class="certification-icon">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            Credential ID: 490B94AFCDA681F
+                        <% } else { %>
+                            Credencial ID: 490B94AFCDA681F
+                        <% } %>
+                    </p>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/JoaquinAguilarHernandez-3122/490B94AFCDA681F?sharingId=A3ECED21789F7AC1" target="_blank" class="btn secondary">
+                        <i class="fas fa-certificate"></i> <%= language === 'en' ? "Verify Credential" : "Verificar Credencial" %>
+                    </a>
+                </div>
+            </div>
+            <!-- Puedes añadir más certificaciones aquí en el futuro -->
+        </div>
+    </div>
+</section>
+
+<section class="learning-section">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? "What I'm Learning" : "Lo Que Estoy Aprendiendo" %>
+        </h2>
+        <div class="learning-grid">
+            <div class="learning-item">
+                <div class="learning-icon">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <div class="learning-content">
+                    <h3>Docker</h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            Mastering containerization to streamline development workflows and create consistent deployment environments.
+                        <% } else { %>
+                            Dominando la contenedorización para optimizar flujos de trabajo de desarrollo y crear entornos de implementación consistentes.
+                        <% } %>
+                    </p>
+                    <h4><%= language === 'en' ? 'Learning Resources:' : 'Recursos de Aprendizaje:' %></h4>
+                    <ul>
+                        <li><%= language === 'en' ? 'Docker Documentation' : 'Documentación de Docker' %></li>
+                        <li><%= language === 'en' ? 'Practical Container Projects' : 'Proyectos Prácticos con Contenedores' %></li>
+                        <li><%= language === 'en' ? 'Docker Compose' : 'Docker Compose' %></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="learning-item">
+                <div class="learning-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="learning-content">
+                    <h3><%= language === 'en' ? 'Modern Web Development' : 'Desarrollo Web Moderno' %></h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            Exploring modern frontend frameworks and responsive design principles to create engaging web experiences.
+                        <% } else { %>
+                            Explorando frameworks modernos de frontend y principios de diseño responsivo para crear experiencias web atractivas.
+                        <% } %>
+                    </p>
+                    <h4><%= language === 'en' ? 'Learning Resources:' : 'Recursos de Aprendizaje:' %></h4>
+                    <ul>
+                        <li><%= language === 'en' ? 'React & Next.js' : 'React y Next.js' %></li>
+                        <li><%= language === 'en' ? 'CSS Animations' : 'Animaciones CSS' %></li>
+                        <li><%= language === 'en' ? 'Responsive Design Patterns' : 'Patrones de Diseño Responsivo' %></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="learning-item">
+                <div class="learning-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="learning-content">
+                    <h3><%= language === 'en' ? 'AI Engineering Path' : 'Ruta de Ingeniería de IA' %></h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            Building on my Microsoft Certified: Azure AI Fundamentals certification, I'm now pursuing the AI Engineering path to develop advanced AI solutions and applications.
+                        <% } else { %>
+                            Basándome en mi certificación Microsoft Certified: Azure AI Fundamentals, ahora estoy siguiendo la ruta de Ingeniería de IA para desarrollar soluciones y aplicaciones avanzadas de IA.
+                        <% } %>
+                    </p>
+                    <h4><%= language === 'en' ? 'Learning Resources:' : 'Recursos de Aprendizaje:' %></h4>
+                    <ul>
+                        <li><%= language === 'en' ? 'Microsoft AI Engineering Certification' : 'Certificación de Ingeniería de IA de Microsoft' %></li>
+                        <li><%= language === 'en' ? 'Advanced Machine Learning Models' : 'Modelos Avanzados de Machine Learning' %></li>
+                        <li><%= language === 'en' ? 'Implementing AI Solutions' : 'Implementación de Soluciones de IA' %></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="learning-item">
+                <div class="learning-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div class="learning-content">
+                    <h3><%= language === 'en' ? 'Code Architecture' : 'Arquitectura de Código' %></h3>
+                    <p>
+                        <% if(language === 'en') { %>
+                            Exploring elegant code structures that balance simplicity with scalability for creating maintainable software systems.
+                        <% } else { %>
+                            Explorando estructuras de código elegantes que equilibran simplicidad con escalabilidad para crear sistemas de software mantenibles.
+                        <% } %>
+                    </p>
+                    <h4><%= language === 'en' ? 'Learning Resources:' : 'Recursos de Aprendizaje:' %></h4>
+                    <ul>
+                        <li><%= language === 'en' ? 'Design Patterns' : 'Patrones de Diseño' %></li>
+                        <li><%= language === 'en' ? 'Refactoring Techniques' : 'Técnicas de Refactorización' %></li>
+                        <li><%= language === 'en' ? 'Code Quality Metrics' : 'Métricas de Calidad de Código' %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-preview">
+    <div class="container">
+        <div class="contact-content">
+            <h2>
+                <%= language === 'en' ? "Let's build something amazing together" : "Construyamos algo increíble juntos" %>
+            </h2>
+            <p>
+                <%= language === 'en' ? "Interested in working together or have a question?" : "¿Interesado en trabajar juntos o tienes alguna pregunta?" %>
+            </p>
+            <a href="/contact" class="btn primary">
+                <%= language === 'en' ? "Get In Touch" : "Contactar" %>
+            </a>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

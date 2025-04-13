@@ -1,0 +1,228 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="welcome-text"><%= language === 'en' ? 'Welcome' : 'Bienvenido' %></h1>
+                <h2 class="name">Joaquín Aguilar</h2>
+                <h3 class="title">
+                    <%= language === 'en' ? 'Software Engineer & Backend Developer' : 'Ingeniero de Software & Desarrollador Backend' %>
+                </h3>
+                <p class="description">
+                    <% if(language === 'en') { %>
+                        Passionate about building robust and scalable systems with Django, Python, C, and JavaScript.
+                        Currently learning Node.js and Flutter.
+                    <% } else { %>
+                        Apasionado por construir sistemas robustos y escalables con Django, Python, C y JavaScript.
+                        Actualmente aprendiendo Node.js y Flutter.
+                    <% } %>
+                </p>
+                <div class="hero-buttons">
+                    <a href="/projects" class="btn primary">
+                        <%= language === 'en' ? 'View Projects' : 'Ver Proyectos' %>
+                    </a>
+                    <a href="https://github.com/JoaquiinAguilar" target="_blank" class="btn secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-container">
+                    <pre><code>
+class Developer {
+  constructor() {
+    this.name = "Joaquín Aguilar";
+    this.role = "Software Engineer";
+    this.location = "Chiapas, Mexico";
+    this.languages = [
+      "Python", "JavaScript", 
+      "C", "HTML", "CSS"
+    ];
+    this.frameworks = [
+      "Django", "Node.js", 
+      "Flutter", "Bootstrap"
+    ];
+  }
+
+  sayHello() {
+    console.log("Thanks for visiting!");
+  }
+}
+
+const me = new Developer();
+me.sayHello();
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? 'About Me' : 'Sobre Mí' %>
+        </h2>
+        <div class="about-cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>
+                    <%= language === 'en' ? 'System engineering' : 'Ingeniero en Sistemas' %>
+                </h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Specializing in robust and efficient server architectures, creating scalable systems that drive seamless digital experiences.
+                    <% } else { %>
+                        Especializado en arquitecturas de servidor robustas y eficientes, creando sistemas escalables que impulsan experiencias digitales fluidas.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>
+                    <%= language === 'en' ? 'Music & Coding' : 'Música & Programación' %>
+                </h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        When I'm not solving complex problems, you'll find me coding while listening to music — my perfect productivity combo.
+                    <% } else { %>
+                        Cuando no estoy resolviendo problemas complejos, me encontrarás programando mientras escucho música — mi combinación perfecta de productividad.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>
+                    <%= language === 'en' ? 'From Mexico' : 'De México' %>
+                </h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Based in Chiapas, Mexico, bringing a global perspective to software development and collaboration.
+                    <% } else { %>
+                        Ubicado en Chiapas, México, aportando una perspectiva global al desarrollo de software y colaboración.
+                    <% } %>
+                </p>
+            </div>
+        </div>
+        <div class="about-cta">
+            <a href="/about" class="btn secondary">
+                <%= language === 'en' ? 'Learn More' : 'Saber Más' %>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="projects-preview">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? 'Featured Projects' : 'Proyectos Destacados' %>
+        </h2>
+        <div class="project-card featured">
+            <div class="project-image">
+                <div class="project-placeholder">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>API REST Fingerprint System</h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        A RESTful API system developed during a hackathon that implements fingerprint authentication using a Persona digital sensor. Built with Django, Python, JavaScript, and Bootstrap.
+                    <% } else { %>
+                        Un sistema API REST desarrollado durante un hackathon que implementa autenticación de huellas digitales utilizando un sensor digital Persona. Construido con Django, Python, JavaScript y Bootstrap.
+                    <% } %>
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">REST API</span>
+                </div>
+                <a href="https://github.com/JoaquiinAguilar/api-rest" target="_blank" class="btn secondary">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="projects-cta">
+            <a href="/projects" class="btn primary">
+                <%= language === 'en' ? 'View All Projects' : 'Ver Todos los Proyectos' %>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="learning-section">
+    <div class="container">
+        <h2 class="section-title">
+            <%= language === 'en' ? "What I'm Learning" : "Lo Que Estoy Aprendiendo" %>
+        </h2>
+        <div class="learning-cards">
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <h3>Node.js</h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Expanding my backend skills with JavaScript runtime for building scalable network applications.
+                    <% } else { %>
+                        Ampliando mis habilidades de backend con el entorno de ejecución JavaScript para construir aplicaciones de red escalables.
+                    <% } %>
+                </p>
+            </div>
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <h3>
+                    <%= language === 'en' ? 'Microservices' : 'Microservicios' %>
+                </h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Exploring patterns for building, deploying, and scaling microservice architectures.
+                    <% } else { %>
+                        Explorando patrones para construir, desplegar y escalar arquitecturas de microservicios.
+                    <% } %>
+                </p>
+            </div>
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Flutter</h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Learning Google's UI toolkit for building natively compiled applications for mobile, web, and desktop.
+                    <% } else { %>
+                        Aprendiendo el kit de herramientas de UI de Google para construir aplicaciones compiladas nativamente para móvil, web y escritorio.
+                    <% } %>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-preview">
+    <div class="container">
+        <div class="contact-content">
+            <h2>
+                <%= language === 'en' ? "Let's build something amazing together" : "Construyamos algo increíble juntos" %>
+            </h2>
+            <p>
+                <%= language === 'en' ? "Interested in working together or have a question?" : "¿Interesado en trabajar juntos o tienes alguna pregunta?" %>
+            </p>
+            <a href="/contact" class="btn primary">
+                <%= language === 'en' ? "Get In Touch" : "Contactar" %>
+            </a>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

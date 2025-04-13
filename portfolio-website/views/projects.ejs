@@ -1,0 +1,151 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+    <div class="container">
+        <h1><%= language === 'en' ? 'My Projects' : 'Mis Proyectos' %></h1>
+        <p>
+            <% if(language === 'en') { %>
+                A showcase of my work and contributions in software engineering
+            <% } else { %>
+                Una muestra de mi trabajo y contribuciones en ingeniería de software
+            <% } %>
+        </p>
+    </div>
+</section>
+
+<section class="projects-grid">
+    <div class="container">
+        <div class="project-card featured">
+            <div class="project-image">
+                <div class="project-placeholder">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+            </div>
+            <div class="project-info">
+                <h2>API REST Fingerprint System</h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        A RESTful API system developed during a hackathon that implements fingerprint authentication using a Persona digital sensor. The system provides secure authentication through biometric verification.
+                    <% } else { %>
+                        Un sistema API REST desarrollado durante un hackathon que implementa autenticación de huellas digitales utilizando un sensor digital Persona. El sistema proporciona autenticación segura a través de verificación biométrica.
+                    <% } %>
+                </p>
+                <h3><%= language === 'en' ? 'Technologies Used:' : 'Tecnologías Utilizadas:' %></h3>
+                <div class="project-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Biometric Authentication</span>
+                </div>
+                <h3><%= language === 'en' ? 'Key Features:' : 'Características Principales:' %></h3>
+                <ul>
+                    <li><%= language === 'en' ? 'Secure fingerprint authentication' : 'Autenticación segura de huellas digitales' %></li>
+                    <li><%= language === 'en' ? 'RESTful API architecture' : 'Arquitectura API RESTful' %></li>
+                    <li><%= language === 'en' ? 'User management system' : 'Sistema de gestión de usuarios' %></li>
+                    <li><%= language === 'en' ? 'Responsive frontend interface' : 'Interfaz frontend responsiva' %></li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/JoaquiinAguilar/api-rest" target="_blank" class="btn secondary">
+                        <i class="fab fa-github"></i> <%= language === 'en' ? 'View on GitHub' : 'Ver en GitHub' %>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <div class="project-placeholder">
+                    <i class="fas fa-hospital-user"></i>
+                </div>
+            </div>
+            <div class="project-info">
+                <h2><%= language === 'en' ? 'Patient Registration System' : 'Sistema de Registro de Pacientes' %></h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        Developing a comprehensive patient registration system with electronic health records, appointment scheduling, and medical history tracking.
+                    <% } else { %>
+                        Desarrollando un sistema integral de registro de pacientes con expedientes clínicos electrónicos, programación de citas y seguimiento de historial médico.
+                    <% } %>
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">RESTful API</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+                <h3><%= language === 'en' ? 'Key Features:' : 'Características Principales:' %></h3>
+                <ul>
+                    <li><%= language === 'en' ? 'Electronic health records management' : 'Gestión de expedientes clínicos electrónicos' %></li>
+                    <li><%= language === 'en' ? 'Appointment scheduling system' : 'Sistema de programación de citas' %></li>
+                    <li><%= language === 'en' ? 'Medical history tracking' : 'Seguimiento de historial médico' %></li>
+                    <li><%= language === 'en' ? 'User authentication and roles' : 'Autenticación de usuarios y roles' %></li>
+                </ul>
+                <div class="project-status">
+                    <span class="status planning">
+                        <i class="fas fa-lightbulb"></i> 
+                        <%= language === 'en' ? 'Planning' : 'Planificación' %>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <div class="project-placeholder">
+                    <i class="fas fa-cash-register"></i>
+                </div>
+            </div>
+            <div class="project-info">
+                <h2><%= language === 'en' ? 'ERP Sales Module Documentation' : 'Documentación Módulo de Ventas ERP' %></h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        Created comprehensive documentation and architecture design for a sales module to be integrated with an Enterprise Resource Planning system. This documentation serves as a blueprint for implementation by development teams.
+                    <% } else { %>
+                        Creación de documentación integral y diseño de arquitectura para un módulo de ventas a integrar con un sistema de Planificación de Recursos Empresariales. Esta documentación sirve como plano para la implementación por equipos de desarrollo.
+                    <% } %>
+                </p>
+                <div class="project-tags">
+                    <span class="tag">System Design</span>
+                    <span class="tag">UML</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Documentation</span>
+                    <span class="tag">API Design</span>
+                </div>
+                <h3><%= language === 'en' ? 'Documentation Scope:' : 'Alcance de la Documentación:' %></h3>
+                <ul>
+                    <li><%= language === 'en' ? 'Database schema design' : 'Diseño de esquema de base de datos' %></li>
+                    <li><%= language === 'en' ? 'API integration specifications' : 'Especificaciones de integración de API' %></li>
+                    <li><%= language === 'en' ? 'Business logic flowcharts' : 'Diagramas de flujo de lógica de negocio' %></li>
+                    <li><%= language === 'en' ? 'UI/UX wireframes and mockups' : 'Wireframes y maquetas de UI/UX' %></li>
+                </ul>
+                <div class="project-status">
+                    <span class="status completed">
+                        <i class="fas fa-check"></i> 
+                        <%= language === 'en' ? 'Documentation Completed' : 'Documentación Completada' %>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="collaboration">
+    <div class="container">
+        <h2><%= language === 'en' ? 'Interested in Collaboration?' : '¿Interesado en Colaborar?' %></h2>
+        <p>
+            <% if(language === 'en') { %>
+                I'm always open to new projects and collaborations. If you have an interesting project in mind or need help with an existing one, feel free to reach out!
+            <% } else { %>
+                Siempre estoy abierto a nuevos proyectos y colaboraciones. Si tienes un proyecto interesante en mente o necesitas ayuda con uno existente, ¡no dudes en contactarme!
+            <% } %>
+        </p>
+        <a href="/contact" class="btn primary">
+            <%= language === 'en' ? "Let's Talk" : "Hablemos" %>
+        </a>
+    </div>
+</section>
+
+<%- include('partials/footer') %>
