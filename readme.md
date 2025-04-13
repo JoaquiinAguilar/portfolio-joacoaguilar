@@ -2,7 +2,7 @@
 
 Un portfolio web personal moderno y responsive desarrollado con Node.js, Express y EJS. Características incluyen cambio de idioma (inglés/español), modo oscuro/claro, y fondo interactivo con partículas.
 
-![Portfolio Web Preview](./public/images/portfolio-preview.png)
+![Portfolio Web Preview](portfolio-website/public/images/portfolio-preview.png)
 
 ## Características
 
