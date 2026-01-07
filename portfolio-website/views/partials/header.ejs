@@ -11,12 +11,43 @@
         <% } %>
     </title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/additional.css">
+    <link rel="stylesheet" href="/css/aditional.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="/js/theme.js" defer></script>
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <script>
+        (function() {
+            const html = document.documentElement;
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            let initialTheme = 'light'; // Default to light
+
+            if (savedTheme) {
+                initialTheme = savedTheme;
+            } else if (prefersDarkScheme.matches) {
+                initialTheme = 'dark';
+            }
+
+            html.setAttribute('data-theme', initialTheme);
+
+            // Prevent transition flicker on initial load
+            const body = document.body;
+            if (body) {
+                body.style.transition = 'none';
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        body.style.transition = ''; // Restore original transition after a repaint
+                    });
+                });
+            }
+        })();
+    </script>
     <script src="/js/animation.js" defer></script>
+    <script src="/js/spa.js" defer></script>
 </head>
 <body>
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
     <div id="particles-js"></div>
     <header>
         <div class="container">
@@ -39,14 +70,18 @@
                     </a>
                 </div>
                 <div class="nav-controls">
-                    <button id="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                    </button>
-                    <div class="language-selector">
-                        <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">EN</a>
-                        <span>|</span>
-                        <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">ES</a>
+                    <label class="theme-switch" for="theme-toggle-checkbox">
+                        <input type="checkbox" id="theme-toggle-checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <div class="language-dropdown-container">
+                        <button class="language-display">
+                            <%= language === 'en' ? 'EN' : 'ES' %> <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-selector">
+                            <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">English</a>
+                            <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">Español</a>
+                        </div>
                     </div>
                 </div>
                 <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
@@ -71,14 +106,18 @@
             <%= language === 'en' ? 'Contact' : 'Contacto' %>
         </a>
         <div class="mobile-controls">
-            <button id="mobile-theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </button>
-            <div class="language-selector">
-                <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">EN</a>
-                <span>|</span>
-                <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">ES</a>
+            <label class="theme-switch" for="mobile-theme-toggle-checkbox">
+                <input type="checkbox" id="mobile-theme-toggle-checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <div class="language-dropdown-container">
+                <button class="language-display">
+                    <%= language === 'en' ? 'EN' : 'ES' %> <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-selector">
+                    <a href="?lang=en" class="<%= language === 'en' ? 'active' : '' %>">English</a>
+                    <a href="?lang=es" class="<%= language === 'es' ? 'active' : '' %>">Español</a>
+                </div>
             </div>
         </div>
     </div>

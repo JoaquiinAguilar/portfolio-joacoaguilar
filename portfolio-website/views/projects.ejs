@@ -17,7 +17,7 @@
     <div class="container">
         <div class="project-card featured">
             <div class="project-image">
-                <img src="/images/api-rest.png" alt="API REST Fingerprint System" class="project-image-thumbnail">
+                <img src="/images/api-rest.png" alt="API REST Fingerprint System" class="project-image-thumbnail" loading="lazy">
             </div>
             <div class="project-info">
                 <h2>API REST Fingerprint System</h2>
@@ -52,85 +52,129 @@
                         <i class="fas fa-external-link-alt"></i> <%= language === 'en' ? 'Live Demo' : 'Demo en Vivo' %>
                     </a>
                 </div>                
-                </div>
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card featured">
             <div class="project-image">
-                <div class="project-placeholder">
-                    <i class="fas fa-hospital-user"></i>
-                </div>
+                <img src="/images/gaiacare-preview.png" alt="GAIACARE - E-commerce Platform" class="project-image-thumbnail" loading="lazy">
             </div>
             <div class="project-info">
-                <h2><%= language === 'en' ? 'Patient Registration System' : 'Sistema de Registro de Pacientes' %></h2>
+                <h2>GAIACARE - E-commerce Platform</h2>
                 <p>
                     <% if(language === 'en') { %>
-                        Developing a comprehensive patient registration system with electronic health records, appointment scheduling, and medical history tracking.
+                        A comprehensive e-commerce platform developed with Django, designed to manage shopping, product pricing, shipping, transfers, and provide an admin web page for cosmetic and perfume sellers. This project was conceived as a business idea for a school competition, aiming to offer a robust and scalable solution for online retail.
                     <% } else { %>
-                        Desarrollando un sistema integral de registro de pacientes con expedientes clínicos electrónicos, programación de citas y seguimiento de historial médico.
+                        Una plataforma integral de comercio electrónico desarrollada con Django, diseñada para gestionar compras, precios de productos, envíos, transferencias y proporcionar una página web de administración para vendedores de cosméticos y perfumes. Este proyecto fue concebido como una idea de negocio para una competencia escolar, con el objetivo de ofrecer una solución robusta y escalable para la venta minorista en línea.
                     <% } %>
                 </p>
+                <h3><%= language === 'en' ? 'Technologies Used:' : 'Tecnologías Utilizadas:' %></h3>
                 <div class="project-tags">
                     <span class="tag">Django</span>
-                    <span class="tag">Python</span>
+                    <span class="tag">Django REST Framework</span>
                     <span class="tag">PostgreSQL</span>
-                    <span class="tag">RESTful API</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
                     <span class="tag">Bootstrap</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Nginx</span>
                 </div>
                 <h3><%= language === 'en' ? 'Key Features:' : 'Características Principales:' %></h3>
                 <ul>
-                    <li><%= language === 'en' ? 'Electronic health records management' : 'Gestión de expedientes clínicos electrónicos' %></li>
-                    <li><%= language === 'en' ? 'Appointment scheduling system' : 'Sistema de programación de citas' %></li>
-                    <li><%= language === 'en' ? 'Medical history tracking' : 'Seguimiento de historial médico' %></li>
-                    <li><%= language === 'en' ? 'User authentication and roles' : 'Autenticación de usuarios y roles' %></li>
+                    <li><%= language === 'en' ? 'Product Management: Add, edit, and delete products with detailed descriptions, images, and pricing.' : 'Gestión de Productos: Añadir, editar y eliminar productos con descripciones detalladas, imágenes y precios.' %></li>
+                    <li><%= language === 'en' ? 'Shopping Cart & Checkout: Seamless shopping experience with a secure checkout process.' : 'Carrito de Compras y Pago: Experiencia de compra fluida con un proceso de pago seguro.' %></li>
+                    <li><%= language === 'en' ? 'Order Management: Track orders, update statuses, and manage customer details.' : 'Gestión de Pedidos: Seguimiento de pedidos, actualización de estados y gestión de detalles del cliente.' %></li>
+                    <li><%= language === 'en' ? 'Admin Panel: A comprehensive, ready-to-use administrative interface for business owners.' : 'Panel de Administración: Una interfaz administrativa completa y lista para usar para los propietarios de negocios.' %></li>
                 </ul>
-                <div class="project-status">
-                    <span class="status planning">
-                        <i class="fas fa-lightbulb"></i> 
-                        <%= language === 'en' ? 'Planning' : 'Planificación' %>
-                    </span>
+                <div class="project-links">
+                    <a href="https://github.com/JoaquiinAguilar/GAIACARE" target="_blank" class="btn secondary">
+                        <i class="fab fa-github"></i> <%= language === 'en' ? 'View on GitHub' : 'Ver en GitHub' %>
+                    </a>
+                </div>                
+            </div>
+        </div>
+
+        <div class="project-card featured">
+            <div class="project-image">
+                <img src="/images/ecuaciones-preview.png" alt="Math Solver Pro - Ecuaciones Diferenciales" class="project-image-thumbnail" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Math Solver Pro - Ecuaciones Diferenciales</h2>
+                <p>
+                    <% if(language === 'en') { %>
+                        A complete web project to solve different types of mathematical equations with a modern interface and data persistence. It supports various equation types including quadratic, Bernoulli, Cauchy-Euler, Clairaut, Riccati, and second-order equations.
+                    <% } else { %>
+                        Un proyecto web completo para resolver diferentes tipos de ecuaciones matemáticas con interfaz moderna y persistencia de datos. Soporta varios tipos de ecuaciones incluyendo cuadráticas, Bernoulli, Cauchy-Euler, Clairaut, Riccati, y ecuaciones de segundo orden.
+                    <% } %>
+                </p>
+                <h3><%= language === 'en' ? 'Technologies Used:' : 'Tecnologías Utilizadas:' %></h3>
+                <div class="project-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">SymPy</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">MathJax</span>
+                    <span class="tag">LocalStorage API</span>
                 </div>
+                <h3><%= language === 'en' ? 'Key Features:' : 'Características Principales:' %></h3>
+                <ul>
+                    <li><%= language === 'en' ? 'Supports Quadratic, Bernoulli, Cauchy-Euler, Clairaut, Riccati, and Second-Order Equations.' : 'Soporta Ecuaciones Cuadráticas, Bernoulli, Cauchy-Euler, Clairaut, Riccati y de Segundo Orden.' %></li>
+                    <li><%= language === 'en' ? 'Persistence of Data: Data is automatically saved.' : 'Persistencia de Datos: Los datos se guardan automáticamente.' %></li>
+                    <li><%= language === 'en' ? 'AJAX Integration: Instant responses without page reload.' : 'Integración AJAX: Respuestas instantáneas sin recargar la página.' %></li>
+                    <li><%= language === 'en' ? 'MathJax Rendering: Professional mathematical formatting.' : 'Renderizado MathJax: Formato matemático profesional.' %></li>
+                    <li><%= language === 'en' ? 'Solution History: History of solutions by type.' : 'Historial de Soluciones: Historial de soluciones por tipo.' %></li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/JoaquiinAguilar/Ecuaciones" target="_blank" class="btn secondary">
+                        <i class="fab fa-github"></i> <%= language === 'en' ? 'View on GitHub' : 'Ver en GitHub' %>
+                    </a>
+                    <a href="https://ecuaciones.onrender.com/solver" target="_blank" class="btn secondary">
+                        <i class="fas fa-external-link-alt"></i> <%= language === 'en' ? 'Live Demo' : 'Demo en Vivo' %>
+                    </a>
+                </div>                
             </div>
         </div>
 
         <div class="project-card">
             <div class="project-image">
-                <div class="project-placeholder">
-                    <i class="fas fa-cash-register"></i>
-                </div>
+                <img src="/images/cubiculos-preview.png" alt="Sistema de Gestión de Cubículos" class="project-image-thumbnail" loading="lazy">
             </div>
             <div class="project-info">
-                <h2><%= language === 'en' ? 'ERP Sales Module Documentation' : 'Documentación Módulo de Ventas ERP' %></h2>
+                <h2><%= language === 'en' ? 'Cubicle Management System' : 'Sistema de Gestión de Cubículos' %></h2>
                 <p>
                     <% if(language === 'en') { %>
-                        Created comprehensive documentation and architecture design for a sales module to be integrated with an Enterprise Resource Planning system. This documentation serves as a blueprint for implementation by development teams.
+                        A Django-based system for managing cubicles, allowing users to rent and release them with a lease time. It includes user authentication, an interactive dashboard, student search, admin functionalities for cubicle management, usage reports, and data upload.
                     <% } else { %>
-                        Creación de documentación integral y diseño de arquitectura para un módulo de ventas a integrar con un sistema de Planificación de Recursos Empresariales. Esta documentación sirve como plano para la implementación por equipos de desarrollo.
+                        Un sistema basado en Django para gestionar cubículos, permitiendo a los usuarios alquilarlos y liberarlos con un tiempo de arrendamiento. Incluye autenticación de usuarios, un panel interactivo, búsqueda de estudiantes, funcionalidades de administración para la gestión de cubículos, informes de uso y carga de datos.
                     <% } %>
                 </p>
+                <h3><%= language === 'en' ? 'Technologies Used:' : 'Tecnologías Utilizadas:' %></h3>
                 <div class="project-tags">
-                    <span class="tag">System Design</span>
-                    <span class="tag">UML</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Documentation</span>
-                    <span class="tag">API Design</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">JavaScript</span>
                 </div>
-                <h3><%= language === 'en' ? 'Documentation Scope:' : 'Alcance de la Documentación:' %></h3>
+                <h3><%= language === 'en' ? 'Key Features:' : 'Características Principales:' %></h3>
                 <ul>
-                    <li><%= language === 'en' ? 'Database schema design' : 'Diseño de esquema de base de datos' %></li>
-                    <li><%= language === 'en' ? 'API integration specifications' : 'Especificaciones de integración de API' %></li>
-                    <li><%= language === 'en' ? 'Business logic flowcharts' : 'Diagramas de flujo de lógica de negocio' %></li>
-                    <li><%= language === 'en' ? 'UI/UX wireframes and mockups' : 'Wireframes y maquetas de UI/UX' %></li>
+                    <li><%= language === 'en' ? 'User Authentication and Roles' : 'Autenticación de Usuarios y Roles' %></li>
+                    <li><%= language === 'en' ? 'Interactive Cubicle Dashboard' : 'Panel Interactivo de Cubículos' %></li>
+                    <li><%= language === 'en' ? 'Cubicle Rental and Early Release' : 'Alquiler y Liberación Anticipada de Cubículos' %></li>
+                    <li><%= language === 'en' ? 'Admin Cubicle Management' : 'Gestión de Cubículos por Administrador' %></li>
+                    <li><%= language === 'en' ? 'Usage Reports (CSV)' : 'Informes de Uso (CSV)' %></li>
                 </ul>
-                <div class="project-status">
-                    <span class="status completed">
-                        <i class="fas fa-check"></i> 
-                        <%= language === 'en' ? 'Documentation Completed' : 'Documentación Completada' %>
-                    </span>
-                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JoaquiinAguilar/Biblioteca" target="_blank" class="btn secondary">
+                        <i class="fab fa-github"></i> <%= language === 'en' ? 'View on GitHub' : 'Ver en GitHub' %>
+                    </a>
+                </div>                
             </div>
         </div>
+
     </div>
 </section>
 

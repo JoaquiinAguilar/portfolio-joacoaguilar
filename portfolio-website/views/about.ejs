@@ -73,7 +73,12 @@
                                     <div class="skill-level" style="width: 80%"></div>
                                 </div>
                             </div>
-                            <br>
+                            <div class="skill">
+                                <div class="skill-name">English</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 100%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-group">
@@ -82,7 +87,7 @@
                             <div class="skill">
                                 <div class="skill-name">Django</div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
+                                    <div class="skill-level" style="width: 100%"></div>
                                 </div>
                             </div>
                             <div class="skill">
@@ -94,13 +99,37 @@
                             <div class="skill">
                                 <div class="skill-name">Git</div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
+                                    <div class="skill-level" style="width: 90%"></div>
                                 </div>
                             </div>
                             <div class="skill">
                                 <div class="skill-name">Flutter</div>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Docker</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Linux</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Coolify</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Render</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
                                 </div>
                             </div>
                         </div>
@@ -155,27 +184,53 @@
         <div class="goals-cards">
             <div class="card">
                 <div class="card-icon">
-                    <i class="fas fa-users"></i>
+                    <i class="fab fa-docker"></i>
                 </div>
-                <h3><%= language === 'en' ? 'Collaboration' : 'Colaboración' %></h3>
+                <h3>Docker</h3>
                 <p>
                     <% if(language === 'en') { %>
-                        Looking to collaborate on backend projects and scalable systems with other passionate developers.
+                        Mastering containerization to streamline development workflows and create consistent deployment environments.
                     <% } else { %>
-                        Buscando colaborar en proyectos backend y sistemas escalables con otros desarrolladores apasionados.
+                        Dominar la contenerización para optimizar los flujos de trabajo de desarrollo y crear entornos de implementación consistentes.
                     <% } %>
                 </p>
             </div>
             <div class="card">
                 <div class="card-icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-code"></i>
                 </div>
-                <h3><%= language === 'en' ? 'Mentorship' : 'Mentoría' %></h3>
+                <h3><%= language === 'en' ? 'Modern Web Development' : 'Desarrollo Web Moderno' %></h3>
                 <p>
                     <% if(language === 'en') { %>
-                        Seeking mentorship in cloud infrastructure and DevOps best practices to enhance my skills.
+                        Exploring modern frontend frameworks and responsive design principles to create engaging web experiences.
                     <% } else { %>
-                        Buscando mentoría en infraestructura en la nube y mejores prácticas de DevOps para mejorar mis habilidades.
+                        Explorar frameworks modernos de frontend y principios de diseño responsivo para crear experiencias web atractivas.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3><%= language === 'en' ? 'AI Engineering Path' : 'Ruta de Ingeniería de IA' %></h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Building on my Microsoft Certified: Azure AI Fundamentals certification, I'm now pursuing the AI Engineering path to develop advanced AI solutions and applications.
+                    <% } else { %>
+                        Basándome en mi certificación Microsoft Certified: Azure AI Fundamentals, ahora estoy siguiendo la ruta de Ingeniería de IA para desarrollar soluciones y aplicaciones avanzadas de IA.
+                    <% } %>
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <h3><%= language === 'en' ? 'Code Architecture' : 'Arquitectura de Código' %></h3>
+                <p>
+                    <% if(language === 'en') { %>
+                        Exploring elegant code structures that balance simplicity with scalability for creating maintainable software systems.
+                    <% } else { %>
+                        Explorando estructuras de código elegantes que equilibran la simplicidad con la escalabilidad para crear sistemas de software mantenibles.
                     <% } %>
                 </p>
             </div>
